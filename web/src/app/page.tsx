@@ -1,3 +1,10 @@
+import TimeTrackerHome from '@/components/time-tracker-home/time-tracker-home'
+import MainLayout from '@/components/layouts/main-layout'
+
 export default function Home() {
-  return <div className="text-4xl font-bold">Hello World</div>
+  return (
+    <MainLayout>
+      <TimeTrackerHome />
+    </MainLayout>
+  )
 }
