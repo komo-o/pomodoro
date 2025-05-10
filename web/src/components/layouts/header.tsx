@@ -15,9 +15,6 @@ export default function Header() {
       </div>
 
       <div className="flex items-center space-x-2">
-        <Button variant="outline" className="border-[#3B9AE1] text-[#3B9AE1] hover:bg-[#3B9AE1]/10">
-          アップグレード
-        </Button>
         <Button variant="ghost" size="icon">
           <Bell className="h-5 w-5 text-gray-500" />
         </Button>
