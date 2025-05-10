@@ -1,78 +1,46 @@
-'use client'
-
 import React from 'react'
 import { Button } from '@/components/ui/Button'
 import Link from 'next/link'
-import {
-  Clock,
-  Calendar,
-  LayoutDashboard,
-  BarChart2,
-  FolderClosed,
-  Users,
-  UserCircle,
-  Tag,
-  ChevronDown,
-  ChevronRight
-} from 'lucide-react'
+import { Clock, ListTodo, Trophy, Settings, BarChart2 } from 'lucide-react'
 
 export default function Sidebar() {
   return (
-    <div className="flex h-[calc(100vh-3.5rem)] w-[220px] flex-col border-r bg-white">
-      <nav className="flex-1 space-y-1 px-2 py-4">
+    <div className="flex h-[calc(100vh-3.5rem)] w-52 flex-col border-r bg-white">
+      <nav className="">
         <Link href="/">
-          <Button variant="ghost" className="w-full justify-start">
-            <Clock className="mr-3 h-5 w-5 text-gray-500" />
-            <span>タイムトラッカー</span>
+          <Button variant="ghost" className="h-12 w-full justify-start px-6">
+            <Clock className="mr-1 h-6 w-6 text-gray-500" />
+            <span className="text-base">ポモドーロ</span>
           </Button>
         </Link>
 
-        <Button variant="ghost" className="w-full justify-start">
-          <Calendar className="mr-3 h-5 w-5 text-gray-500" />
-          <span>カレンダー</span>
-        </Button>
+        <Link href="/task-mng">
+          <Button variant="ghost" className="h-12 w-full justify-start px-6">
+            <ListTodo className="mr-1 h-6 w-6 text-gray-500" />
+            <span className="text-base">タスク管理</span>
+          </Button>
+        </Link>
 
-        <div className="px-3 py-2 text-xs text-gray-500">分析する</div>
-
-        <Button variant="ghost" className="w-full justify-start">
-          <LayoutDashboard className="mr-3 h-5 w-5 text-gray-500" />
-          <span>ダッシュボード</span>
-        </Button>
+        <Link href="/ranking">
+          <Button variant="ghost" className="h-12 w-full justify-start px-6">
+            <Trophy className="mr-1 h-6 w-6 text-gray-500" />
+            <span className="text-base">ランキング</span>
+          </Button>
+        </Link>
 
         <Link href="/report">
-          <Button variant="ghost" className="flex w-full items-center justify-start">
-            <BarChart2 className="mr-3 h-5 w-5 text-gray-500" />
-            <span>レポート</span>
-            <ChevronRight className="ml-auto h-4 w-4" />
+          <Button variant="ghost" className="h-12 w-full justify-start px-6">
+            <BarChart2 className="mr-1 h-6 w-6 text-gray-500" />
+            <span className="text-base">レポート</span>
           </Button>
         </Link>
 
-        <div className="px-3 py-2 text-xs text-gray-500">管理</div>
-
-        <Button variant="ghost" className="w-full justify-start">
-          <FolderClosed className="mr-3 h-5 w-5 text-gray-500" />
-          <span>プロジェクト</span>
-        </Button>
-
-        <Button variant="ghost" className="w-full justify-start">
-          <Users className="mr-3 h-5 w-5 text-gray-500" />
-          <span>チーム</span>
-        </Button>
-
-        <Button variant="ghost" className="w-full justify-start">
-          <UserCircle className="mr-3 h-5 w-5 text-gray-500" />
-          <span>クライアント</span>
-        </Button>
-
-        <Button variant="ghost" className="w-full justify-start">
-          <Tag className="mr-3 h-5 w-5 text-gray-500" />
-          <span>タグ</span>
-        </Button>
-
-        <Button variant="ghost" className="w-full items-center justify-start">
-          <ChevronDown className="mr-3 h-5 w-5 text-gray-500" />
-          <span>もっと見せる</span>
-        </Button>
+        <Link href="/settings">
+          <Button variant="ghost" className="h-12 w-full justify-start px-6">
+            <Settings className="mr-1 h-6 w-6 text-gray-500" />
+            <span className="text-base">設定</span>
+          </Button>
+        </Link>
       </nav>
     </div>
   )
