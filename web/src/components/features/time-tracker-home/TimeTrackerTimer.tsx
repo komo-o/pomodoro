@@ -2,9 +2,6 @@
 
 import React from 'react'
 import { Button } from '@/components/ui/Button'
-import { Card } from '@/components/ui/Card'
-import { Plus } from 'lucide-react'
-import Image from 'next/image'
 
 export default function TimeTrackerTimer() {
   return (
@@ -18,34 +15,6 @@ export default function TimeTrackerTimer() {
             </div>
           </div>
           <Button className="w-32 rounded-full bg-[#3B9AE1] hover:bg-[#2980b9]">開始</Button>
-        </div>
-      </div>
-
-      <div className="w-64">
-        <div className="space-y-4">
-          <Card className="border-0 p-4 shadow-sm">
-            <div className="text-sm text-gray-500">今日の統計</div>
-            <div className="text-2xl font-semibold">0m</div>
-          </Card>
-
-          <div className="mt-4">
-            <div className="mb-2 flex items-center justify-between">
-              <div className="text-sm font-medium">フォーカスレコード</div>
-              <Button variant="ghost" size="sm" className="h-6 px-1">
-                <Plus className="h-3 w-3" />
-              </Button>
-            </div>
-            <Card className="flex h-32 flex-col items-center justify-center border-0 p-4 text-center shadow-sm">
-              <Image
-                src="https://cdn-icons-png.flaticon.com/512/4989/4989793.png"
-                alt="Empty state"
-                width={48}
-                height={48}
-                className="mb-2 h-12 w-12 opacity-50"
-              />
-              <div className="text-sm text-gray-500">まだ集中記録がありません。</div>
-            </Card>
-          </div>
         </div>
       </div>
     </div>
