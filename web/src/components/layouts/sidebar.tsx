@@ -2,12 +2,10 @@
 
 import React from 'react'
 import { Button } from '@/components/ui/button'
-import { Separator } from '@/components/ui/separator'
 import Link from 'next/link'
 import {
   Clock,
   Calendar,
-  Share2,
   LayoutDashboard,
   BarChart2,
   FolderClosed,

@@ -23,8 +23,6 @@ const data = [
   { name: '日', value: 22 }
 ]
 
-const pieData = [{ name: 'Tracked', value: 22, color: '#A5D78F' }]
-
 const COLORS = ['#A5D78F', '#E0E0E0']
 
 export default function TimeChartView() {
