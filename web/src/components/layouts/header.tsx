@@ -1,8 +1,8 @@
 'use client'
 
 import React from 'react'
-import { Button } from '@/components/ui/button'
-import { Avatar, AvatarFallback } from '@/components/ui/avatar'
+import { Button } from '@/components/ui/Button'
+import { Avatar, AvatarFallback } from '@/components/ui/Avatar'
 import { Bell, HelpCircle, Clock } from 'lucide-react'
 
 export default function Header() {

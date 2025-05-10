@@ -1,23 +1,21 @@
-"use client";
+'use client'
 
-import React from "react";
-import Header from "./header";
-import Sidebar from "./sidebar";
+import React from 'react'
+import Header from './Header'
+import Sidebar from './Sidebar'
 
 interface MainLayoutProps {
-  children: React.ReactNode;
+  children: React.ReactNode
 }
 
 export default function MainLayout({ children }: MainLayoutProps) {
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="flex min-h-screen flex-col">
       <Header />
       <div className="flex flex-1">
         <Sidebar />
-        <main className="flex-1 bg-gray-50">
-          {children}
-        </main>
+        <main className="flex-1 bg-gray-50">{children}</main>
       </div>
     </div>
-  );
+  )
 }

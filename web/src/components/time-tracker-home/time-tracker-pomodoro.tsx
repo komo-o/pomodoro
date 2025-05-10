@@ -1,14 +1,16 @@
 'use client'
 
 import React, { useState, useEffect } from 'react'
-import { Button } from '@/components/ui/button'
-import { Card } from '@/components/ui/card'
+import { Button } from '@/components/ui/Button'
+import { Card } from '@/components/ui/Card'
 import Image from 'next/image'
 
 export default function TimeTrackerPomodoro() {
   const [timeLeft, setTimeLeft] = useState(25 * 60)
   const [isRunning, setIsRunning] = useState(false)
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [todayPomodoros, setTodayPomodoros] = useState(0)
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [totalTime, setTotalTime] = useState(0)
 
   useEffect(() => {

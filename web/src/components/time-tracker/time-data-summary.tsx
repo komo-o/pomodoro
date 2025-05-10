@@ -1,7 +1,7 @@
 'use client'
 
 import React from 'react'
-import { Button } from '@/components/ui/button'
+import { Button } from '@/components/ui/Button'
 import { Download, Share2, Printer, ChevronDown, MoreHorizontal } from 'lucide-react'
 
 export default function TimeDataSummary() {
