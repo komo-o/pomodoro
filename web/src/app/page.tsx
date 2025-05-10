@@ -1,4 +1,4 @@
-import TimeTrackerHome from '@/components/time-tracker-home/time-tracker-home'
+import TimeTrackerHome from '@/components/features/time-tracker-home/TimeTrackerHome'
 import MainLayout from '@/components/layouts/main-layout'
 
 export default function Home() {

@@ -4,8 +4,8 @@ import React, { useState } from 'react'
 import { Tabs, TabsList, TabsTrigger } from '@/components/ui/Tabs'
 import { Button } from '@/components/ui/Button'
 import { Plus } from 'lucide-react'
-import TimeTrackerTimer from './time-tracker-timer'
-import TimeTrackerPomodoro from './time-tracker-pomodoro'
+import TimeTrackerTimer from './TimeTrackerTimer'
+import TimeTrackerPomodoro from './TimeTrackerPomodoro'
 
 export default function TimeTrackerHome() {
   const [activeTab, setActiveTab] = useState('pomodoro')
